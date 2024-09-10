@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sawarabi Gothic", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+.logo{
+    color: rgb(245, 71, 65);
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    transition: .4s ease-in-out;
+}
+
+.logo:hover{
+    scale: 1.1;
+}
+
+.last{
+    color: rgb(255, 255, 255);
+}
+
+.links a{
+    position: relative;
+    font-size: 1.2rem;
+    padding: 20px;
+    transition: .1s ease-in;
+    text-decoration: none;
+}
+
+nav i{
+    display: none;
+}
+
+/* animation for underline */
+.links a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2291eb;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    
+}
+
+.links a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.links a:hover{
+    color: rgb(231, 25, 25);
+}
+
+/* navbar ends */
+
+
+/* hero section starts */
+.hero{
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.left{
+    height: 90%;
+    width: 50%;
+}
+
+.left img{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    height: 90%;
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px rgb(235, 10, 10);
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+}
+
+.right span{
+    color: rgb(214, 71, 71);
+}
+.right h2{
+    margin-top: 10rem;
+}
+
+.right h1{
+    font-size: 3rem;
+}
+
+.right button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(245, 71, 65);
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right-social i{
+    margin-top: 2rem;
+    color: rgb(210, 215, 216);
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+/* hero section ends */
+
+
+/* responsiveness */
+@media screen and (max-width: 700px) {
+    /* nav section */
+    .logo{
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    .links{
+        display: none;
+    }
+
+    nav i{
+        display: contents;
+        font-size: 1.5rem;
+    }
+    
+    /* hero section */
+    .hero{
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .left{
+        display: flex;
+        height: 40%;
+        width: 100%;
+        align-items: center;
+        margin-left: 5vw;
+    }
+
+    .left img{
+        margin-top: 5vh;
+        width: 80%;
+        height: 300px;
+        
+    }
+    .right{
+        height: 60%;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .right h2{
+        margin-top: 10vh;
+        padding-top: 0px;
+    }
+}
