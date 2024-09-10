@@ -286,10 +286,160 @@ nav i{
     color: white;
     border-color: white;
 }
-/* button of about section ends */
-
 /* about section ends */
 
+
+/* skill section starts */
+.skill-header{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 9rem;
+    transition: .3s ease-in-out;
+}
+
+.skill-header:hover{
+    color: rgb(219, 189, 18);
+    /* transition: .3s ease-in-out; */
+}
+
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin-top: 10rem; */
+    margin-bottom: 50px;
+    padding: 40px 40px;
+}
+
+/* add background image to the box and do animation with before and after with texts here */
+.box1{
+    background-color: rgba(84, 214, 45, 0.452);
+    height: 300px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 5px 20px 5px rgb(155, 154, 154);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .3s ease-in;
+  
+}
+
+.box1:hover{
+    scale: 1.1;
+    box-shadow: 4px 5px 20px 5px rgb(146, 10, 10);
+    transform: rotate(3deg);
+}
+
+.box1 img{
+    height: 200px;
+    width: 200px;
+}
+
+.heading, .paragraph{
+    background: none;
+}
+
+.box2{
+    margin-left: 80px;
+    background-color: rgba(31, 132, 190, 0.753);
+    height: 300px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 5px 20px 5px rgb(160, 159, 159);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .3s ease-in;
+}
+
+.box2:hover{
+    scale: 1.1;
+    box-shadow: 4px 5px 20px 5px rgb(128, 6, 6);
+    transform: rotate(3deg);
+}
+
+.box2 img{
+    height: 200px;
+    width: 200px;
+}
+
+.box3{
+    margin-left: 80px;
+    background-color: rgba(223, 188, 32, 0.719);
+    height: 300px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 5px 20px 5px rgb(158, 158, 158);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .3s ease-in;   
+}
+
+.box3:hover{
+    scale: 1.1;
+    box-shadow: 4px 5px 20px 5px rgb(207, 19, 19);
+    transform: rotate(3deg);
+}
+
+.box3 img{
+    height: 200px;
+    width: 200px;
+}
+
+.heading{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+.paragraph{
+    padding-top: 1rem;
+    color: rgb(238, 238, 238);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.paragraph:hover{
+    color: rgb(0, 0, 0);
+    transition: .2s ease-in;
+}
+
+/* footer section starts */
+footer{
+    color: rgba(167, 167, 167, 0.822);
+    font-size: 0.9  rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 15px;
+}
+
+/* footer section ends */
 
 /* responsiveness */
 @media screen and (max-width: 700px) {
@@ -383,4 +533,23 @@ nav i{
     }
 
     /* skill section */
+    .skill-header{
+        margin-top: 20px;
+        border-top: 2px solid rgb(17, 108, 182);
+    }
+    .skill{
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin-left: 2vw;
+    }
+    
+    .box2{
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+    .box3{
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
 }
