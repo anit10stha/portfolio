@@ -1,6 +1,6 @@
 gsap.from(".right-social a i",{
-    x:2000,
-    y:200,
+    x:200,
+    y:0,
     opacity: 0,
     duration: 1.5,
     delay: 1,
