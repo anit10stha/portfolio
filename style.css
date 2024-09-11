@@ -7,6 +7,24 @@
     color: white;
 }
 
+#cursor{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(39, 148, 225, 0.744);
+    color: greenyellow;
+    font-size: larger;
+    font-weight: 900;
+    border-radius: 50%;
+    transition: all linear .2s;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .main{
     height: 100%;
     width: 100%;
