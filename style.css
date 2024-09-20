@@ -113,11 +113,29 @@ nav i{
     border-radius: 50%;
     box-shadow: 2px 2px 15px rgb(65, 194, 245);
     transition: .5s ease-in-out;
+    animation: anit .7s linear;
+
+
+    
 }
 
 .left img:hover{
     box-shadow: 2px 2px 15px rgb(29, 212, 84);
 }
+
+@keyframes anit{
+    from{
+        opacity: 0%;
+        scale: 0.5;
+        /* transform: translateX(-50%); */
+    }
+    to{
+        opacity: 100%;
+        /* transform: translateX(0); */
+        scale: 1;
+    }
+}
+
 
 .right{
     height: 100%;
@@ -326,11 +344,27 @@ nav i{
     /* margin-top: 10rem; */
     margin-bottom: 50px;
     padding: 40px 40px;
+    animation: skills linear;
+    animation-timeline: view();
+    animation-range: entry(0) cover;
+}
+
+
+/* for animation of skill boxes */
+@keyframes skills{
+    from{
+        opacity: 50%;
+        scale: 0;
+    }
+    to{
+        opacity: 100%;
+        scale: 2;
+    }
 }
 
 /* add background image to the box and do animation with before and after with texts here */
 .box1{
-    background-color: rgba(84, 214, 45, 0.452);
+    background-color: rgba(31, 132, 190, 0.753);
     height: 300px;
     width: 300px;
     color: rgb(0, 0, 0);
@@ -350,7 +384,7 @@ nav i{
 
 .box1:hover{
     scale: 1.1;
-    box-shadow: 4px 5px 20px 5px rgb(146, 10, 10);
+    box-shadow: 4px 5px 20px 5px rgb(219, 198, 6);
     transform: rotate(3deg);
 }
 
@@ -395,7 +429,7 @@ nav i{
 
 .box3{
     margin-left: 80px;
-    background-color: rgba(223, 188, 32, 0.719);
+    background-color: rgba(31, 132, 190, 0.753);
     height: 300px;
     width: 300px;
     color: rgb(0, 0, 0);
@@ -414,7 +448,7 @@ nav i{
 
 .box3:hover{
     scale: 1.1;
-    box-shadow: 4px 5px 20px 5px rgb(207, 19, 19);
+    box-shadow: 4px 5px 20px 5px rgb(5, 207, 89);
     transform: rotate(3deg);
 }
 
@@ -555,6 +589,7 @@ footer{
         height: 100%;
         width: 100%;
         margin-left: 2vw;
+        
     }
     
     .box2{
@@ -564,8 +599,10 @@ footer{
     .box3{
         margin-top: 5vh;
         margin-left: 1vw;
+      
     }
 }
+
 
 /* custom scrollbar */
 ::-webkit-scrollbar{
