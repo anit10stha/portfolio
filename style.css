@@ -5,6 +5,7 @@
     font-family: "Sawarabi Gothic", sans-serif;
     background-color: rgb(0, 0, 0);
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* #cursor{
@@ -17,8 +18,6 @@
     mix-blend-mode: difference;
     filter: blur(5px);
 } */
-
-
 
 .main{
     height: 100%;
@@ -38,7 +37,7 @@ nav{
 
 .logo{
     color: rgb(65, 194, 245);
-    margin-left: 30px;
+    margin-left: 9rem;
     font-size: 2rem;
     font-weight: 900;
     transition: .4s ease-in-out;
@@ -59,6 +58,11 @@ nav{
     padding: 20px;
     transition: .1s ease-in;
     text-decoration: none;
+    color: rgb(65, 194, 245);
+    font-weight: 500;
+    transition: .4s ease-in-out;
+    right: 5rem;
+
 }
 
 nav i{
@@ -106,16 +110,15 @@ nav i{
 }
 
 .left img{
-    margin-top: 10vh;
-    margin-left: 5vw;
-    height: 90%;
-    width: 70%;
+    margin-top: 15vh;
+    margin-left: 9vw;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px rgb(65, 194, 245);
-    transition: .5s ease-in-out;
+    filter: brightness(0.9);
+    transition: .3s ease-in-out;
     animation: anit .7s linear;
-
-
     
 }
 
@@ -126,7 +129,7 @@ nav i{
 @keyframes anit{
     from{
         opacity: 0%;
-        scale: 0.5;
+        scale: 1.2;
         /* transform: translateX(-50%); */
     }
     to{
@@ -353,12 +356,10 @@ nav i{
 /* for animation of skill boxes */
 @keyframes skills{
     from{
-        opacity: 50%;
-        scale: 0;
+        opacity: 0%;
     }
     to{
         opacity: 100%;
-        scale: 2;
     }
 }
 
@@ -386,11 +387,6 @@ nav i{
     scale: 1.1;
     box-shadow: 4px 5px 20px 5px rgb(219, 198, 6);
     transform: rotate(3deg);
-}
-
-.box1 img{
-    height: 200px;
-    width: 200px;
 }
 
 .heading, .paragraph{
@@ -422,11 +418,6 @@ nav i{
     transform: rotate(3deg);
 }
 
-.box2 img{
-    height: 200px;
-    width: 200px;
-}
-
 .box3{
     margin-left: 80px;
     background-color: rgba(31, 132, 190, 0.753);
@@ -452,10 +443,6 @@ nav i{
     transform: rotate(3deg);
 }
 
-.box3 img{
-    height: 200px;
-    width: 200px;
-}
 
 .heading{
     padding-top: 1rem;
@@ -475,6 +462,66 @@ nav i{
     color: rgb(0, 0, 0);
     transition: .2s ease-in;
 }
+/* skill section ends */
+
+
+/* projects section starts */
+#pj-heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 8rem;
+    color: rgb(219, 189, 18);
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.project-1, .project-2, .project-3, .project-4{
+    height: 500px;
+    width: 68rem;
+    margin: 3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 3px rgba(185, 47, 47, 0.705);
+}
+
+.project-1{
+    background-image: url("./assets/razer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-2{
+    background-image: url("./assets/school.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-3{
+    background-image: url("./assets/youtube.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-4{
+    background-image: url("./assets/amazon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* projects section ends */
+
+
 
 /* footer section starts */
 footer{
