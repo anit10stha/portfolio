@@ -1,3 +1,4 @@
+
 // cursor animatin
 var body = document.querySelector("body");
 var cursor = document.querySelector("#cursor");
@@ -35,3 +36,45 @@ gsap.from(".right-social a i",{
 //     delay: 3,
 //     stagger: 1
 // })
+
+
+// back circle animation to webdevelopment text
+var circle = document.querySelector(".circle");
+
+var h1 = document.querySelector("h1");
+
+window.addEventListener("mousemove", function(dets){
+    gsap.to(circle, {
+        x: dets.clientX,
+        y: dets.clientY,
+        duration: .3,
+        ease: Expo
+    })
+})
+
+h1.addEventListener("mousemove", function(dets){
+    gsap.to(circle, {
+        scale: 5,
+        filter: "blur(1px)",
+    })
+
+    gsap.to("h1",{
+        color: "orange",
+        duration: .1,
+        // y: "-5vw"
+    })
+})
+
+h1.addEventListener("mouseleave", function(dets){
+    gsap.to(circle, {
+        scale: 1,
+        filter: "blur(0px)"
+    })
+
+    gsap.to("h1",{
+        color: "white",
+        duration: .1,
+        // y: 0
+    })
+})
+    
